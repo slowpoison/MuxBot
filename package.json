@@ -1,0 +1,27 @@
+{
+  "name": "muxbot",
+  "version": "1.0.0",
+  "description": "Multi-provider Slack AI bot powered by Vercel AI SDK",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/index.ts --ext ts,json",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^1.0.0",
+    "@ai-sdk/openai": "^1.0.0",
+    "@ai-sdk/openai-compatible": "^0.1.0",
+    "@slack/bolt": "^3.21.0",
+    "ai": "^4.0.0",
+    "dotenv": "^16.4.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  }
+}
