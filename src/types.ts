@@ -1,14 +1,14 @@
-import type { CoreMessage } from "ai";
+import type { ModelMessage } from "ai";
 
-export type { CoreMessage };
+export type { ModelMessage as CoreMessage };
 
 export type MemoryKey = string;
 
-export type ProviderName = "gemini" | "openai" | "nebius";
+export type ProviderName = "gemini" | "openai" | "nebius" | "ollama";
 
 export type PersonaName = "general" | "property" | "software";
 
 export interface MemoryEntry {
-  messages: CoreMessage[];
+  messages: ModelMessage[];
   lastUpdated: number;
 }

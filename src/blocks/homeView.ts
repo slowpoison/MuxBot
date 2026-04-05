@@ -1,4 +1,4 @@
-import type { View, Block, KnownBlock } from "@slack/bolt";
+import type { View, Block, KnownBlock } from "@slack/types";
 import type { CoreMessage } from "../types";
 import type { Persona } from "../personas";
 import { PERSONAS } from "../personas";

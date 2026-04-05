@@ -10,7 +10,10 @@ const schema = z.object({
   OPENAI_API_KEY: z.string().optional(),
   NEBIUS_API_KEY: z.string().optional(),
 
-  DEFAULT_PROVIDER: z.enum(["gemini", "openai", "nebius"]).default("gemini"),
+  OLLAMA_BASE_URL: z.string().url().default("http://localhost:11434"),
+  OLLAMA_MODEL: z.string().default("llama3.2"),
+
+  DEFAULT_PROVIDER: z.enum(["gemini", "openai", "nebius", "ollama"]).default("gemini"),
 
   PORT: z.coerce.number().default(3000),
   LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info"),

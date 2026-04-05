@@ -1,6 +1,6 @@
 {
   "name": "irisbot",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "IrisBot — multi-provider Slack AI bot powered by Vercel AI SDK",
   "license": "Apache-2.0",
   "main": "dist/index.js",
@@ -11,15 +11,18 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@ai-sdk/google": "^1.0.0",
-    "@ai-sdk/openai": "^1.0.0",
-    "@ai-sdk/openai-compatible": "^0.1.0",
-    "@slack/bolt": "^3.21.0",
-    "ai": "^4.0.0",
+    "@ai-sdk/google": "^3.0.58",
+    "@ai-sdk/openai": "^3.0.50",
+    "@ai-sdk/openai-compatible": "^2.0.38",
+    "@slack/bolt": "^4.6.0",
+    "ai": "^6.0.146",
+    "ai-sdk-ollama": "^3.8.2",
     "dotenv": "^16.4.0",
     "zod": "^3.23.0"
   },
   "devDependencies": {
+    "@slack/types": "^2.20.1",
+    "@types/express": "^5.0.6",
     "@types/node": "^22.0.0",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
