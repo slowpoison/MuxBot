@@ -1,6 +1,6 @@
 {
   "name": "muxbot",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Multi-provider Slack AI bot powered by Vercel AI SDK",
   "license": "Apache-2.0",
   "main": "dist/index.js",
