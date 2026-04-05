@@ -1,4 +1,5 @@
-# Muxbot — Project Context
+# IrisBot — Project Context
+Use specs/ dir for detailed context on versions
 
 ## What this is
 

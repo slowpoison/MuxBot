@@ -30,7 +30,7 @@ registerHomeHandlers(app);
 
 (async () => {
   await app.start(config.PORT);
-  console.log(`⚡ Muxbot is running (Socket Mode, port ${config.PORT})`);
+  console.log(`⚡ IrisBot is running (Socket Mode, port ${config.PORT})`);
 })().catch((err) => {
   console.error("Fatal startup error:", err);
   process.exit(1);

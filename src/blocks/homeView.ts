@@ -6,7 +6,7 @@ import { PERSONAS } from "../personas";
 export function buildHomeView(messages: CoreMessage[], activePersona: Persona): View {
   const historyBlocks: (KnownBlock | Block)[] = messages.flatMap((msg) => {
     const isUser = msg.role === "user";
-    const label = isUser ? ":bust_in_silhouette: *You*" : `${activePersona.emoji} *Muxbot*`;
+    const label = isUser ? ":bust_in_silhouette: *You*" : `${activePersona.emoji} *IrisBot*`;
     const text = typeof msg.content === "string" ? msg.content : JSON.stringify(msg.content);
     return [
       {
@@ -28,7 +28,7 @@ export function buildHomeView(messages: CoreMessage[], activePersona: Persona): 
     blocks: [
       {
         type: "header",
-        text: { type: "plain_text", text: "🃏 Muxbot", emoji: true },
+        text: { type: "plain_text", text: "🃏 IrisBot", emoji: true },
       },
       {
         type: "actions",
@@ -89,7 +89,7 @@ export function buildHomeView(messages: CoreMessage[], activePersona: Persona): 
               title: { type: "plain_text", text: "Clear history?" },
               text: {
                 type: "mrkdwn",
-                text: "This will erase your entire conversation with Muxbot.",
+                text: "This will erase your entire conversation with IrisBot.",
               },
               confirm: { type: "plain_text", text: "Yes, clear it" },
               deny: { type: "plain_text", text: "Cancel" },

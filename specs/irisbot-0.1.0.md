@@ -1,4 +1,4 @@
-# Muxbot — Technical Specification
+# IrisBot — Technical Specification
 
 **Version:** 0.1.0
 **Date:** 2026-04-05
@@ -7,7 +7,7 @@
 
 ## Overview
 
-Muxbot is a multi-provider Slack AI bot built with TypeScript and the Vercel AI SDK. Users interact with it via Slack mentions, direct messages, slash commands, and an App Home UI. It supports multiple LLM backends and user-selectable personas, with per-session conversation memory.
+IrisBot is a multi-provider Slack AI bot built with TypeScript and the Vercel AI SDK. Users interact with it via Slack mentions, direct messages, slash commands, and an App Home UI. It supports multiple LLM backends and user-selectable personas, with per-session conversation memory.
 
 ---
 
@@ -185,7 +185,7 @@ Four event/action handlers:
 Built in `src/blocks/homeView.ts` using Slack Block Kit.
 
 Layout (top to bottom):
-1. Header: "🃏 Muxbot"
+1. Header: "🃏 IrisBot"
 2. Persona selector (static_select dropdown, `action_id: home_persona_select`)
 3. Divider
 4. Conversation history — alternating user/bot section blocks with dividers (or "No messages yet" placeholder)

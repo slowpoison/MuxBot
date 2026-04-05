@@ -1,7 +1,7 @@
 {
-  "name": "muxbot",
+  "name": "irisbot",
   "version": "0.1.0",
-  "description": "Multi-provider Slack AI bot powered by Vercel AI SDK",
+  "description": "IrisBot — multi-provider Slack AI bot powered by Vercel AI SDK",
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "scripts": {
