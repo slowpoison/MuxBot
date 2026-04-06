@@ -1,14 +1,23 @@
 {
-  "name": "irisbot",
-  "version": "0.2.0",
+  "name": "@slowpoison/irisbot",
+  "version": "0.4.0",
   "description": "IrisBot — multi-provider Slack AI bot powered by Vercel AI SDK",
   "license": "Apache-2.0",
   "main": "dist/index.js",
+  "bin": {
+    "irisbot": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    ".env.example"
+  ],
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts --ext ts,json",
     "build": "tsc",
     "start": "node dist/index.js",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm build",
+    "publish": "pnpm publish --access public"
   },
   "dependencies": {
     "@ai-sdk/google": "^3.0.58",
